@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="je.css">
+  <link rel="stylesheet" href="audio.css">
+  <title></title>
+</head>
+
+<body>
+<center>
+  <div onclick="playsound('clap')"  class="key">Clap </div>
+  <br>
+  
+    <div onclick="playsound('hihat')" class="key">hihat </div>
+    <br>
+    
+    <div onclick="playsound('kick')" class="key">kick </div>
+    <br>
+      <div onclick="playsound('openhat')" class="key">openhat </div>
+      <br>
+        <div onclick="playsound('boom')" class="key">boom </div>
+        <br>
+          <div onclick="playsound('ride')" class="key">ride </div>
+          <br>
+           <div onclick="playsound('snare')" class="key">snare </div>
+          <br />
+            <div onclick="playsound('tom')" class="key">tom </div>
+            <br />
+              <div onclick="playsound('tink')" class="key">tink </div>
+              
+              <audio id="boom" src="sounds/boom.wav"></audio>
+               <audio id="clap" src="sounds/clap.wav"> </audio>
+             <audio id="hihat" src="sounds/hihat.wav"> </audio>
+              <audio id="kick" src="sounds/kick.wav"> </audio>
+               <audio id="openhat" src="sounds/openhat.wav"> </audio>
+                <audio id="ride" src="sounds/ride.wav"> </audio>
+               <audio id="snare" src="sounds/snare .wav"> </audio>
+                <audio id="tom" src="sounds/tom.wav"> </audio>
+                <audio id="tink" src="sounds/tink.wav"> </audio>
+
+  <script>
+    
+    const playsound=(code)=>{
+      var audio=document.querySelector("#"+code);
+      if (!audio) return;
+      audio.currendTime=0
+      audio.play();
+    }
+    
+    
+  </script>
+  <a href="../conector.html">volver</a>
+</center>
+</body>
+
+</html>
